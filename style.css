@@ -777,3 +777,80 @@ body {
 @media (max-width: 576px) {
     .hero-title {
         font-size:
+
+/* Стили для иконки вместо фото */
+.design-icon {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+}
+
+.design-icon i {
+    font-size: 120px;
+    color: #d4af37;
+    z-index: 2;
+}
+
+.icon-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.1);
+    z-index: 1;
+}
+
+.icon-circle:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.icon-circle:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    animation: pulse 4s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.icon-circle:nth-child(4) {
+    width: 300px;
+    height: 300px;
+    animation: pulse 5s infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.1; }
+    50% { transform: scale(1.1); opacity: 0.2; }
+}
+
+/* Адаптивность для иконки */
+@media (max-width: 768px) {
+    .design-icon {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .design-icon i {
+        font-size: 100px;
+    }
+    
+    .icon-circle:nth-child(2) {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .icon-circle:nth-child(3) {
+        width: 210px;
+        height: 210px;
+    }
+    
+    .icon-circle:nth-child(4) {
+        width: 250px;
+        height: 250px;
+    }
+}
