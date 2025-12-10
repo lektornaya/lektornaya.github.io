@@ -348,8 +348,15 @@ body {
 }
 
 .portfolio-image {
-    height: 250px;
-    overflow: hidden;
+    height: auto; 
+    overflow: visible; 
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain; 
+    border-radius: 8px 8px 0 0;
 }
 
 .image-placeholder {
