@@ -7,55 +7,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <!-- Шапка сайта -->
+    <!-- Фиксированная шапка -->
     <header class="header">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>Екатерина Лашкова</h1>
-                    <p class="tagline">Студентка 3 курса ИИТА СПБГУПТД</p>
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a href="#hero">Екатерина Лашкова</a>
                 </div>
-                
-                <nav class="nav">
-                    <button class="menu-toggle" aria-label="Открыть меню">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                    <ul class="nav-list">
-                        <li><a href="#hero">Главная</a></li>
-                        <li><a href="#about">О себе</a></li>
-                        <li><a href="#experience">Опыт</a></li>
-                        <li><a href="#education">Образование</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Главный раздел -->
+    <!-- Главный экран -->
     <section id="hero" class="hero">
         <div class="container">
-            <div class="hero-grid">
+            <div class="hero-content">
                 <div class="hero-text">
-                    <h2>IT-дизайнер на стыке технологий и эстетики</h2>
-                    <p class="hero-description">Создаю цифровые продукты, которые объединяют функциональность IT-решений с визуальной гармонией. Моя цель — преобразовывать и структурировать цифровую среду, делая её не только эффективной, но и визуально привлекательной.</p>
-                    <p class="hero-description">Ищу стажировку по специальности IT-дизайн, где смогу применить свои навыки и внести вклад в создание интуитивно понятных интерфейсов.</p>
-                    <a href="#contacts" class="btn">Связаться со мной</a>
+                    <h1 class="hero-title">
+                        <span class="title-line">IT-дизайнер</span>
+                        <span class="title-line">на стыке технологий</span>
+                        <span class="title-line">и эстетики</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Создаю цифровые продукты, где функциональность встречается с визуальной гармонией. 
+                        Студентка 3 курса ИИТА СПБГУПТД.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Смотреть работы</a>
+                        <a href="#contacts" class="btn btn-secondary">Связаться</a>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <div class="avatar-container">
-                        <!-- Замените src="images/avatar.jpg" на свою фотографию -->
-                        <img src="images/avatar.jpg" alt="Фотография Екатерины Лашковой" class="avatar">
-                        <div class="avatar-placeholder">
-                            <i class="fas fa-user-circle"></i>
-                            <p>Ваше фото здесь</p>
+                    <div class="image-frame">
+                        <div class="placeholder-image">
+                            <i class="fas fa-user"></i>
+                            <p>Ваше фото</p>
                         </div>
                     </div>
                 </div>
@@ -63,59 +66,118 @@
         </div>
     </section>
 
-    <!-- О себе -->
+    <!-- Архитектурный разделитель -->
+    <div class="architectural-divider">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+
+    <!-- Обо мне -->
     <section id="about" class="about section">
         <div class="container">
-            <h2 class="section-title">О себе</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>Мой путь</h3>
-                    <p>Учусь на стыке IT и дизайна, где технологические решения встречаются с визуальной эстетикой. Верю, что цифровая среда должна быть не только функциональной, но и эмоционально насыщенной, радующей глаз и упрощающей взаимодействие.</p>
-                    <p>Стремлюсь создавать продукты, которые органично встраиваются в жизнь пользователей, решая реальные задачи с помощью продуманного дизайна и современных технологий.</p>
+            <div class="section-header">
+                <h2 class="section-title">Обо мне</h2>
+                <p class="section-subtitle">IT-дизайнер и разработчик из Санкт-Петербурга</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Учусь на стыке IT и дизайна, создавая продукты, которые органично сочетают технологичность и эстетику. Верю, что цифровая среда должна быть не только функциональной, но и эмоционально насыщенной.</p>
+                    <p>Моя цель — создавать интерфейсы и визуальные решения, которые радуют глаз и упрощают взаимодействие пользователя с технологиями.</p>
+                    <p>Ищу стажировку в области IT-дизайна, где смогу применить свои навыки и внести вклад в создание интуитивно понятных цифровых продуктов.</p>
                 </div>
-                
-                <div class="about-card">
-                    <h3>Навыки</h3>
-                    <div class="skills">
-                        <div class="skill-category">
-                            <h4>Дизайн</h4>
-                            <ul>
-                                <li><i class="fas fa-palette"></i> Adobe Photoshop</li>
-                                <li><i class="fas fa-film"></i> Adobe After Effects</li>
-                                <li><i class="fas fa-video"></i> Adobe Premiere Pro</li>
-                                <li><i class="fas fa-pen-nib"></i> Adobe Illustrator</li>
-                            </ul>
+                <div class="about-info">
+                    <div class="info-item">
+                        <h4>Образование</h4>
+                        <p>СПБГУПТД, ИИТА<br>3 курс, IT-дизайн</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Локация</h4>
+                        <p>Санкт-Петербург</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Статус</h4>
+                        <p>Готова к стажировке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Портфолио</h2>
+                <p class="section-subtitle">Мои ключевые проекты</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Проект 1: Игра -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder game">
+                            <i class="fas fa-gamepad"></i>
+                            <p>Glass Code of Medieval</p>
                         </div>
-                        <div class="skill-category">
-                            <h4>Технологии</h4>
-                            <ul>
-                                <li><i class="fas fa-code"></i> Python</li>
-                                <li><i class="fas fa-cube"></i> 3D моделирование</li>
-                                <li><i class="fas fa-mobile-alt"></i> Адаптивный дизайн</li>
-                                <li><i class="fas fa-sitemap"></i> Прототипирование</li>
-                            </ul>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Glass Code of Medieval</h3>
+                        <p class="portfolio-category">2D-платформер и шутер</p>
+                        <p class="portfolio-description">
+                            Игра в средневековом сеттинге с элементами платформера и шутера. 
+                            Разработана на Python с использованием библиотеки PyGame.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pygame</span>
+                            <span class="tag">Геймдизайн</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="about-card">
-                    <h3>Интересы</h3>
-                    <div class="interests">
-                        <div class="interest-item">
-                            <i class="fas fa-paint-brush"></i>
-                            <p>Создание креативных визуальных образов</p>
+
+                <!-- Проект 2: Фотография -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder photo">
+                            <i class="fas fa-camera"></i>
+                            <p>Фото для La'dor</p>
                         </div>
-                        <div class="interest-item">
-                            <i class="fas fa-eye"></i>
-                            <p>Повышение насмотренности на выставках и в digital-арте</p>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Бренд-фото для La'dor</h3>
+                        <p class="portfolio-category">Фотография косметики</p>
+                        <p class="portfolio-description">
+                            Серия фотографий для корейского бренда косметики La'dor. 
+                            Работа над композицией, светом и цветокоррекцией для создания привлекательного визуального контента.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Фотография</span>
+                            <span class="tag">Ретушь</span>
                         </div>
-                        <div class="interest-item">
-                            <i class="fas fa-project-diagram"></i>
-                            <p>Многоступенчатые алгоритмы и системное мышление</p>
+                    </div>
+                </div>
+
+                <!-- Проект 3: Будущий проект -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder future">
+                            <i class="fas fa-palette"></i>
+                            <p>Новый проект</p>
                         </div>
-                        <div class="interest-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>Исследование UX/UI трендов и нейроэстетики</p>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Интерактивный портфолио</h3>
+                        <p class="portfolio-category">Веб-дизайн</p>
+                        <p class="portfolio-description">
+                            Разработка интерактивного веб-портфолио с анимациями и современным дизайном. 
+                            Проект в процессе разработки.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Анимация</span>
+                            <span class="tag">Прототипирование</span>
                         </div>
                     </div>
                 </div>
@@ -123,67 +185,119 @@
         </div>
     </section>
 
-    <!-- Опыт работы -->
+    <!-- Навыки -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Навыки</h2>
+                <p class="section-subtitle">Технологии и инструменты, которые я использую</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Дизайн</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Illustrator</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe After Effects</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Разработка</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (база)</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pygame</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Архитектурный разделитель 2 -->
+    <div class="architectural-divider reverse">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+
+    <!-- Опыт -->
     <section id="experience" class="experience section">
         <div class="container">
-            <h2 class="section-title">Опыт работы</h2>
-            <div class="experience-content">
-                <div class="experience-card emphasis">
-                    <div class="experience-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Опыта работы пока нет</h3>
-                    <p>В настоящее время фокусируюсь на получении фундаментального образования и оттачивании профессиональных навыков. Активно участвую в учебных проектах, где применяю знания на практике.</p>
-                    <p>Готовлюсь к первой стажировке, изучая реальные кейсы и современные подходы в IT-дизайне. Рассматриваю это как возможность для роста и приобретения ценного опыта в индустрии.</p>
-                </div>
-                
-                <div class="experience-card">
-                    <h3>Учебные проекты</h3>
-                    <ul>
-                        <li>Разработка интерфейса для мобильного приложения</li>
-                        <li>Создание айдентики для студенческого мероприятия</li>
-                        <li>Визуализация данных с помощью Python</li>
-                        <li>Прототипирование веб-сервиса</li>
-                    </ul>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Опыт и образование</h2>
+                <p class="section-subtitle">Мой путь в IT-дизайне</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Образование -->
-    <section id="education" class="education section">
-        <div class="container">
-            <h2 class="section-title">Образование</h2>
-            <div class="education-grid">
-                <div class="education-card main">
-                    <div class="education-header">
-                        <h3>Санкт-Петербургский государственный университет промышленных технологий и дизайна</h3>
-                        <p class="education-period">2021 — настоящее время</p>
-                    </div>
-                    <div class="education-body">
-                        <p class="education-specialty">Институт информационных технологий и автоматизации (ИИТА)</p>
-                        <p class="education-details">3 курс, направление подготовки: IT-дизайн и визуальные технологии</p>
-                        <div class="education-highlights">
-                            <h4>Ключевые дисциплины:</h4>
-                            <ul>
-                                <li>Компьютерная графика и дизайн</li>
-                                <li>Веб-технологии и UX/UI дизайн</li>
-                                <li>Программирование на Python</li>
-                                <li>Мультимедийные технологии</li>
-                                <li>3D-моделирование и визуализация</li>
-                            </ul>
-                        </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 — настоящее время</div>
+                    <div class="timeline-content">
+                        <h3>СПБГУПТД, Институт ИИТА</h3>
+                        <p class="timeline-subtitle">IT-дизайн и визуальные технологии</p>
+                        <p>Изучение современных технологий в дизайне, программирование, компьютерная графика и веб-разработка. Участие в студенческих проектах и конкурсах.</p>
                     </div>
                 </div>
                 
-                <div class="education-card">
-                    <h3>Курсы и сертификаты</h3>
-                    <ul>
-                        <li>Основы UX/UI дизайна (Stepik, 2023)</li>
-                        <li>Adobe Creative Cloud для дизайнеров (Coursera, 2022)</li>
-                        <li>Python для визуализации данных (2022)</li>
-                        <li>Основы веб-верстки (HTML/CSS) (2022)</li>
-                    </ul>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 — 2023</div>
+                    <div class="timeline-content">
+                        <h3>Самостоятельные проекты</h3>
+                        <p class="timeline-subtitle">Разработка игр и дизайн</p>
+                        <p>Создание игры "Glass Code of Medieval" на Python/Pygame, разработка дизайн-макетов, фотосъемка и обработка изображений для брендов.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item emphasis">
+                    <div class="timeline-date">Сейчас</div>
+                    <div class="timeline-content">
+                        <h3>Готова к первой стажировке</h3>
+                        <p class="timeline-subtitle">Ищу возможности для роста</p>
+                        <p>Активно ищу стажировку в области IT-дизайна, UI/UX или frontend-разработки. Готова применять свои навыки в реальных проектах и учиться у профессионалов.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,58 +306,67 @@
     <!-- Контакты -->
     <section id="contacts" class="contacts section">
         <div class="container">
-            <h2 class="section-title">Контакты</h2>
-            <div class="contacts-grid">
+            <div class="section-header">
+                <h2 class="section-title">Контакты</h2>
+                <p class="section-subtitle">Давайте создавать что-то вместе</p>
+            </div>
+            
+            <div class="contacts-content">
                 <div class="contact-info">
-                    <h3>Свяжитесь со мной</h3>
-                    <div class="contact-details">
-                        <div class="contact-item">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Электронная почта</h4>
-                                <a href="mailto:l.ektornaya@gmail.com">l.ektornaya@gmail.com</a>
-                            </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:l.ektornaya@gmail.com">l.ektornaya@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Телефон</h4>
-                                <a href="tel:+79315809389">+7 (931) 580-93-89</a>
-                            </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <a href="tel:+79315809389">+7 (931) 580-93-89</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/ekaterinalashkova" target="_blank">github.com/ekaterinalashkova</a>
-                            </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/lektornaya" target="_blank">github.com/lektornaya</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-vk"></i>
-                            <div>
-                                <h4>ВКонтакте</h4>
-                                <a href="https://vk.com/ekaterinalashkova" target="_blank">vk.com/ekaterinalashkova</a>
-                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <h4>ВКонтакте</h4>
+                            <a href="https://vk.com/ekaterinalashkova" target="_blank">vk.com/ekaterinalashkova</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3>Форма обратной связи</h3>
-                    <form id="feedback-form">
+                    <h3>Напишите мне</h3>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Имя</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" placeholder="Ваше имя" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Сообщение</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <textarea id="message" placeholder="Сообщение" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Отправить сообщение</button>
+                        <button type="submit" class="btn btn-primary">Отправить сообщение</button>
                     </form>
                 </div>
             </div>
@@ -254,20 +377,28 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <p class="copyright">© 2023 Екатерина Лашкова. Все права защищены.</p>
-                    <p>Студентка 3 курса ИИТА СПБГУПТД</p>
+                <div class="footer-logo">
+                    <a href="#hero">Екатерина Лашкова</a>
+                    <p>IT-дизайнер и разработчик</p>
                 </div>
                 
-                <div class="footer-contacts">
-                    <h4>Контакты</h4>
-                    <div class="footer-contact-links">
-                        <a href="mailto:l.ektornaya@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:+79315809389"><i class="fas fa-phone"></i></a>
-                        <a href="https://github.com/ekaterinalashkova" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://vk.com/ekaterinalashkova" target="_blank"><i class="fab fa-vk"></i></a>
-                    </div>
+                <div class="footer-links">
+                    <a href="#about">Обо мне</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#skills">Навыки</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/lektornaya" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://vk.com/ekaterinalashkova" target="_blank"><i class="fab fa-vk"></i></a>
+                    <a href="mailto:l.ektornaya@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Екатерина Лашкова. Все права защищены.</p>
+                <p>Студентка СПБГУПТД, ИИТА</p>
             </div>
         </div>
     </footer>
